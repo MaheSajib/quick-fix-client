@@ -1,11 +1,7 @@
 .testimonials{
     height: 500px;
 }
-.testimonials .container{
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 150px;
-}
+
 .testimonials .card{
     border-color: transparent;
     width: 300px;

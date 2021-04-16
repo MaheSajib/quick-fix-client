@@ -40,9 +40,9 @@ const Footer = () => {
             <div className="row py-5">
                 <FooterCol key={1} menuTitle="Quick-fix" menuItems={openTime}> 
                     <ul className="social-media list-inline">
-                        <li className="list-inline-item"><a href="//twitter.com"><FontAwesomeIcon className="icon" icon={faTwitter} /></a></li>
-                        <li className="list-inline-item"><a href="//instagram.com"><FontAwesomeIcon className="icon" icon={faInstagram} /></a></li>
-                        <li className="list-inline-item"><a href="//facebook.com"><FontAwesomeIcon className="icon " icon={faFacebookF} /></a></li>
+                        <li className="list-inline-item"><a to="//twitter.com"><FontAwesomeIcon className="icon" icon={faTwitter} /></a></li>
+                        <li className="list-inline-item"><a to="//instagram.com"><FontAwesomeIcon className="icon" icon={faInstagram} /></a></li>
+                        <li className="list-inline-item"><a to="//facebook.com"><FontAwesomeIcon className="icon " icon={faFacebookF} /></a></li>
                     </ul>
                 </FooterCol>
                 <FooterCol key={2} menuTitle="Quick Links" menuItems={quickLinks}/>
