@@ -1,0 +1,21 @@
+.testimonials{
+    height: 500px;
+}
+.testimonials .container{
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 150px;
+}
+.testimonials .card{
+    border-color: transparent;
+    width: 300px;
+    float: left;
+    padding: 5px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.testimonials .card .card-footer{
+    background: transparent;
+    border: 0;
+}

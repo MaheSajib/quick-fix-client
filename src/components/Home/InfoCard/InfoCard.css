@@ -1,0 +1,13 @@
+.info-card{
+    padding: 0 10px;
+}
+
+
+.info-icon{
+    font-size: 3em;
+    color: #232323;
+}
+.info-container{
+    height: 180px;
+    padding: 50px;
+}
