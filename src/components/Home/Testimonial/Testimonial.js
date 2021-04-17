@@ -9,7 +9,7 @@ const Testimonial = (props) => {
                 <p className="card-text text-center">{quote}</p>
             </div>
             <div className="card-footer text-center align-items-center">
-                <h5 style={{color: '#232323'}} className="mb-3">{name}</h5>
+                <h5  className="mb-3 card-name">{name}</h5>
                 <img className="mx-3" src={img} width="60" alt="" />
                 
             </div>
