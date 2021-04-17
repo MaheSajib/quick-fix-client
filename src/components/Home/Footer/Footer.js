@@ -50,7 +50,7 @@ const Footer = () => {
                 <FooterCol key={4} menuTitle="Information" menuItems={information}/>
             </div>
             <div className="copyRight text-white text-center">
-                <p>Copyright Md. Mahe Alam {(new Date()).getFullYear()} All Rights Reserved</p>
+                <p>Copyright {(new Date()).getFullYear()} All Rights Reserved. Md. Mahe Alam </p>
             </div>
         </div>
     </footer>

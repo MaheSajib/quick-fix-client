@@ -10,7 +10,7 @@ const InfoCard = ({ info }) => {
                     <FontAwesomeIcon className="info-icon" icon={info.icon}></FontAwesomeIcon>
                 </div>
                 <div>
-                    <h6>{info.title}</h6>
+                    <h6 className="info-name">{info.title}</h6>
                 </div>
             </div>
         </div>
