@@ -9,7 +9,7 @@ const Sidebar = () => {
     const [loggedInUser, setLoggedInUser ] = useContext(UserContext);
     const [admin, setAdmin] = useState(false)
     useEffect(() => {
-        fetch('http://localhost:5055/adminCheck?email='+loggedInUser.email)
+        fetch('https://shielded-spire-18150.herokuapp.com/adminCheck?email='+loggedInUser.email)
         .then(res => res.json())
         .then(data => {
             console.log(data.length)

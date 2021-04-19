@@ -14,7 +14,7 @@ const Review = () => {
             quote: data.description,
             img: imageURL
         };
-        const url = `http://localhost:5055/addTestimonial`
+        const url = `https://shielded-spire-18150.herokuapp.com/addTestimonial`
 
         fetch(url, {
             method: 'POST',

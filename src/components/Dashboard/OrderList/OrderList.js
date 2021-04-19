@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const OrderList = () => {
     const [orders, setOrders] = useState([])
-    fetch('http://localhost:5055/orderList')
+    fetch('https://shielded-spire-18150.herokuapp.com/orderList')
         .then(res => res.json())
         .then(data => setOrders(data))
     return (

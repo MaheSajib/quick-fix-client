@@ -48,7 +48,7 @@ const SimpleCardForm = ({ handlePayment }) => {
                 service
             }
 
-            fetch('http://localhost:5055/addOrder', {
+            fetch('https://shielded-spire-18150.herokuapp.com/addOrder', {
                 method: 'POST',
                 headers: {
                     'content-type' : 'application/json'

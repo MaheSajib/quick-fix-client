@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const ManageServices = () => {
     const [manageService , setManageService] = useState([])
-    fetch('http://localhost:5055/services')
+    fetch('https://shielded-spire-18150.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setManageService(data))
     return (

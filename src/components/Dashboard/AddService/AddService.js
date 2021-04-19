@@ -13,7 +13,7 @@ const AddService = () => {
             price: data.price,
             imageURL: imageURL
         };
-        const url = `http://localhost:5055/addService`
+        const url = `https://shielded-spire-18150.herokuapp.com/addService`
 
         fetch(url, {
             method: 'POST',
