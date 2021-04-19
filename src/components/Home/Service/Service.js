@@ -1,35 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
-
-const serviceData = [
-    {
-        name: 'Cracked Screen',
-        description: 'Cracked screen replacement services are both fast and affordable.',
-    },
-    {
-        name: 'Water Damage',
-        description: 'We will perform a diagnostic to determine the extent of the damage.',
-    },
-    {
-        name: 'Speaker Not Working',
-        description: 'You may be in need of a speaker repair or replacement.',
-    },
-    {
-        name: 'No Signal',
-        description: 'When you are experiencing weak signal or no signal.',
-    },
-    {
-        name: 'Broken Buttons',
-        description: 'If buttons on your device are malfunctioning or broken.',
-    },
-    {
-        name: 'Dead Battery',
-        description: 'FixTeam performs professional battery replacements.',
-    }
-]
-
+import './Service.css';
 
 const Service = () => {
+
+    const [serviceData, setServiceData] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5055/services')
+        .then(res => res.json())
+        .then(data => setServiceData(data))
+    }, [])
+
     return (
         <section className="container  services-container m-5">
             <div className="text-center">

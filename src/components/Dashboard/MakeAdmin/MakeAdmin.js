@@ -2,10 +2,18 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 
 const MakeAdmin = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
-
-    console.log(watch("example"));
+    const { register, handleSubmit } = useForm();
+    const onSubmit = data => {
+        console.log(data)
+        fetch('http://localhost:5055/addAdmin', {
+            method: 'POST',
+            headers: {
+                'content-type' : 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => console.log('server side responce', res))
+    };
 
     return (
         <div>
@@ -16,7 +24,7 @@ const MakeAdmin = () => {
                         <div>
                             <h5>Email</h5>
                             <div className="d-flex">
-                                <input type="text" className="form-control px-5" placeholder="email@email.com" {...register("example")} />
+                                <input type="text" className="form-control px-5" placeholder="email@email.com" {...register("email")} />
                                 <input type="submit" className="btn-success mx-2" />
                             </div>
                         </div>

@@ -18,16 +18,16 @@ const Dashboard = () => {
                     <Route exact path={path}>
                         <h3>Please select a topic.</h3>
                     </Route>
-                    <Route path={`${path}/orderlist`}>
+                    <Route path={`${path}/orderList`}>
                         <OrderList></OrderList>
                     </Route>
-                    <Route path={`${path}/addservice`}>
+                    <Route path={`${path}/addService`}>
                         <AddService></AddService>
                     </Route>
-                    <Route path={`${path}/makeadmin`}>
+                    <Route path={`${path}/makeAdmin`}>
                         <MakeAdmin></MakeAdmin>
                     </Route>
-                    <Route path={`${path}/manageservices`}>
+                    <Route path={`${path}/manageServices`}>
                         <ManageServices></ManageServices>
                     </Route>
                     <Route path={`${path}/book`}>
