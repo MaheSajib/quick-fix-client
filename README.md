@@ -28,3 +28,4 @@ Live Link : [https://quick-fix-client.web.app/](https://quick-fix-client.web.app
  2. Also Adding extra section.
  3. This Side also have minimum responsiveness on mobile version.
  4. Also adding an Admin.
+ 5. Adding Status section on OrderList
